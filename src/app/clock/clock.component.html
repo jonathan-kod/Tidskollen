@@ -1,0 +1,12 @@
+<div class="clock">
+    <div class="rotatedNumberContainer"
+        *ngFor="let no of clockNumbers"
+        [style.transform]="'rotate('+ getDegreeForNumber(no) + 'deg)'">
+        <div class="numberContainer" 
+            [style.transform]="'rotate('+ getDegreeForNumber(no * -1) + 'deg)'">
+            {{no}}
+        </div>
+    </div>
+    <div class="hand minuteHand" #minuteHand></div>
+    <div class="hand hourHand" #hourHand></div>
+</div>

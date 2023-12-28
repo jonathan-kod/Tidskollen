@@ -1,0 +1,26 @@
+.pageContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    .date {
+        font-size: 80px;
+        font-weight: bolder;
+        margin: 0px;
+    }
+
+    .weekDay {
+        font-size: 150px;
+        font-weight: bolder;
+        margin: 0px;
+    }
+
+    .categoryOfDay {
+        margin-top: 0px;
+        font-size: 100px;
+        font-weight: bolder;
+        margin: 0px;
+    }
+}

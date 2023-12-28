@@ -1,0 +1,42 @@
+.clock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;  
+    border-radius: 50%;
+    
+    .rotatedNumberContainer {
+        height: 100%;
+        position: absolute;
+    
+        .numberContainer {
+            font-size: 30px;
+            font-weight: bold;  
+            line-height: 60px;
+        }
+    }
+
+    .hand {
+        position: absolute;
+        background: black;
+        transform-origin: 50% 80%;
+    }
+    
+    .minuteHand {
+        width: 6px;
+        height: 40%;    
+        top: 17%;
+        border-radius: 40% 40% 0 0;
+    }
+    
+    .hourHand {
+        width: 10px;
+        height: 25%;
+        top: 29%;
+        border-radius: 50% 50% 0 0;
+    }
+}
+
