@@ -1,9 +1,17 @@
 <div class="clock">
-    <div class="rotatedNumberContainer"
+    <!-- <div class="rotatedNumberContainer"
         *ngFor="let no of clockNumbers"
         [style.webkitTransform]="'rotate('+ getDegreeForNumber(no) + 'deg)'">
         <div class="numberContainer" 
-            [style.webkitTransform]="'rotate('+ getDegreeForNumber(no * -1) + 'deg)'">
+            [style.transform]="'rotate('+ getDegreeForNumber(no * -1) + 'deg)'">
+            {{no}}
+        </div>
+    </div> -->
+    <div class="rotatedNumberContainer"
+        *ngFor="let no of clockNumbers"
+        [ngStyle]="{'-webkit-transform': 'rotate(' + getDegreeForNumber(no) + 'deg)'}">
+        <div class="numberContainer" 
+            [ngStyle]="{'-webkit-transform': 'rotate(' + getDegreeForNumber(no * -1) + 'deg)'}">
             {{no}}
         </div>
     </div>
