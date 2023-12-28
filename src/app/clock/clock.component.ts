@@ -25,8 +25,8 @@ export class ClockComponent implements OnInit {
   }
 
   updateClockHands() {
-    this.minuteHand.nativeElement.style.transform = 'rotate(' + this.getMinuteHandDegree() + 'deg)'
-    this.hourHand.nativeElement.style.transform = 'rotate(' + this.getHourHandDegree() + 'deg)';
+    this.minuteHand.nativeElement.style.webkitTransform = 'rotate(' + this.getMinuteHandDegree() + 'deg)'
+    this.hourHand.nativeElement.style.webkitTransform = 'rotate(' + this.getHourHandDegree() + 'deg)';
   }
 
   getMinuteHandDegree(): number {
