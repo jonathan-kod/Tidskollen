@@ -16,15 +16,18 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
+    "target": "es5",
+    "module": "commonjs",
     "useDefineForClassFields": false,
+    //new settings
     "lib": [
-      "ES2022",
+      "es5",
       "dom"
     ],
-    // new setting
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
